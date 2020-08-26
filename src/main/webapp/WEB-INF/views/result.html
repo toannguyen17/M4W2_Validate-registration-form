@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Success</title>
+    <title>Hello</title>
 </head>
 <body>
-<div>Your name <h5 th:text="${register.name}"></h5></div>
-<div>Your email <h5 th:text="${register.email}"></h5></div>
-<div>Your password <h5 th:text="${register.password}"></h5></div>
+<div>Your name: <strong th:text="${users.name}"></strong></div>
+<div>Your email: <strong th:text="${users.email}"></strong></div>
+<div>Your password: <strong th:text="${users.password}"></strong></div>
 </body>
 </html>

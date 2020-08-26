@@ -3,7 +3,7 @@ package redt.validation;
 
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
-import redt.model.FormRegister;
+import redt.form.FormRegister;
 
 public class FormValidation implements Validator {
     @Override

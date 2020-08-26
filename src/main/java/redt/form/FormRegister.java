@@ -1,4 +1,6 @@
-package redt.model;
+package redt.form;
+
+import redt.validation.Unique.Unique;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -11,6 +13,7 @@ public class FormRegister {
 
     @NotBlank
     @Email
+    @Unique
     private String email;
 
     @NotBlank
@@ -22,7 +25,6 @@ public class FormRegister {
     private String passwordConfirmation;
 
     public FormRegister(){
-
     }
 
     public String getName() {
